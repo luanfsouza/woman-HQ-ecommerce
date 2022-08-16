@@ -1,0 +1,52 @@
+.banner_container{
+perspective:500px;
+margin: auto;
+position: absolute;
+right: 30px;
+top: 40px;
+z-index: 0;
+}
+.container_wrapper{
+        width: 500px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+grid-auto-rows: 180px;
+grid-gap: 1em;
+margin: auto;
+perspective:2000px;
+
+transform-style: preserve-3d;
+
+  transform:scaleX(1) scaleY(1) scaleZ(1) rotateX(14deg) rotateY(-2deg) rotateZ(3deg) translateX(0px) translateY(0px) translateZ(0px) skewX(-8deg) skewY(5deg);
+}
+.banner_container img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    
+}
+.banner_1{
+    background-color: rgb(142, 16, 221);
+    
+     transform-style: preserve-3d;
+
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(4deg) rotateY(1deg) rotateZ(-5deg) translateX(-2px) translateY(0px) translateZ(0px) skewX(-5deg) skewY(6deg);
+
+}
+.banner_dest{
+     transform-style: preserve-3d;
+
+ background-color: rgba(152, 119, 119, 0);
+}
+.banner_dest img{
+    opacity: 1;
+
+}
+.dest_item{
+    height: 100%;
+ transform-style: preserve-3d;
+
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(1deg) rotateZ(-5deg) translateX(-2px) translateY(0px) translateZ(0px) skewX(-5deg) skewY(6deg);
+box-shadow: 0px 10px 29px 5px  black;
+}

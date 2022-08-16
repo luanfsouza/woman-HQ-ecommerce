@@ -1,0 +1,81 @@
+.about_container {
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #f3f4ff;
+  grid-auto-rows: 50vh;
+}
+
+.about_info,
+.illustrators_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 4rem;
+  background-color: #f3f4ff;
+}
+.about_info h1 {
+  color: #965dff;
+  font-size: min(2em, 10vw);
+  font-family: "Playfair Display", serif;
+}
+.about_info span {
+  font-size: min(0.8em, 8vw);
+  align-self: flex-start;
+  color: #c55ee4;
+}
+.about_info button {
+  border: none;
+  color: #965dff;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0px 0px 14px 2px rgba(57, 55, 55, 0.299);
+  cursor: pointer;
+}
+.about_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.illustrators_info h1{
+      color: #965dff;
+  font-size: min(2em, 10vw);
+  font-family: "Playfair Display", serif;
+}
+.illustrators_info span{
+  font-size: min(0.8em, 8vw);
+  align-self: flex-start;
+  color: #c55ee4;
+}
+.illustrators_banner {
+  background-color: #1332c9;
+  background-image: linear-gradient(43deg, #1332c9 0%, #bc05fe 100%);
+  position: relative;
+}
+.illustrators_banner::after{
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  display: block;
+  height: 100%;
+  
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;  
+background-image: url('../../../public/images/capitan-marvel.png');
+opacity: 0.2;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center top 10%;
+
+}
+@media (max-width: 1100px) {
+  .about_container {
+    grid-template-columns: 1fr;
+  }
+}

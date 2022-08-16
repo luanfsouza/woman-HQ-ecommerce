@@ -1,0 +1,256 @@
+.home_container {
+background-color: #1332c9;
+background-image: linear-gradient(43deg, #1332c9 0%, #bc05fe 100%);
+
+
+
+
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+}
+.home_container nav {
+  display: flex;
+  background-color: #f3f4ff;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex: 2.5;
+  justify-content: space-around;
+  height: 70px;
+}
+.navbar .btn_mobile {
+  display: none;
+}
+.btn_mobile {
+  display: none;
+}
+.active {
+  display: block;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.navbar ul li {
+  margin: 0 1em;
+}
+.nav_logo {
+  width: 80px;
+  height: 80px;
+}
+.nav_logo::after {
+  content: "";
+  position: absolute;
+  left: 80px;
+  top: 70px;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 15px solid #f3f4ff;
+  clear: both;
+}
+.nav_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.nav_user {
+  flex: 1;
+  background-color: #32139c;
+  color: rgb(228, 228, 228);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav_user ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+
+.home_container main {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 70px);
+  align-items: center;
+  justify-content: center;
+
+  
+
+
+}
+.home_container main::after {
+  margin-top: 20vh;
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  display: block;
+  height: 80vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;  
+background-image: url('../../public/images/mulher-maravilha.png');
+opacity: 0.15;
+background-repeat: no-repeat;
+background-size: auto;
+background-position: left top 28%;
+}
+.home_container main .main_text {
+  align-self: start;
+  width: 40%;
+  z-index: 1;
+  margin-left: 10vw;
+}
+.home_container main .main_text h1 {
+  font-size: min(10vw, 4rem);
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+.home_container main .main_text h4 {
+  color: #f3f4ffc7;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.home_container main .main_text p {
+  color: #9f9f9fcf;
+}
+.main_text .main_textBtn button {
+  color: white;
+  border: none;
+  padding: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.main_text .main_textBtn .btnLeft {
+  background-color: #c55ee4;
+}
+.main_text .main_textBtn .btnRight {
+  background-color: transparent;
+  border: 1px solid;
+}
+.home_container main .main_logos {
+  width: 80%;
+  background-color: #f3f4ff;
+  align-self: end;
+  justify-self: start;
+  height: max(5em, 12vh);
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(50%);
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+}
+.home_container main .main_logos svg {
+  font-size: min(2.5rem, 5vw);
+  color: #32139c;
+  cursor: pointer;
+}
+.home_container main div {
+  z-index: 0;
+}
+@media (max-width: 1100px) {
+  .banner {
+    display: none;
+  }
+  .home_container main .main_text {
+    width: 80%;
+    align-self: center;
+  }
+  .btn_mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+  .hamburger {
+    border-top: 2px solid;
+    width: 20px;
+    color: rgb(255, 254, 254);
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+  }
+  .navbar ul {
+    position: absolute;
+    width: 100%;
+    color: rgba(255, 0, 0, 0);
+    top: 70px;
+    right: 0px;
+    display: block;
+    height: 0px;
+    background-color: #32139c;
+    z-index: 2;
+    transition: 0.5s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .navbar.active ul {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+  .nav_user.active .hamburger {
+    border-top-color: transparent;
+  }
+  .nav_user.active .hamburger::after {
+    transform: rotate(135deg);
+  }
+  .nav_user.active .hamburger::before {
+    transform: rotate(-135deg);
+    top: 32px;
+    position: absolute;
+  }
+  .navbar.active ul li {
+    border-bottom: 1px solid rgba(172, 170, 170, 0.423);
+    color: white;
+    padding: 1rem 0;
+    width: 50%;
+    text-align: center;
+  }
+  .singin {
+    display: none;
+  }
+  .navbar {
+    display: block;
+  }
+  .nav_user {
+    flex: 2;
+  }
+ 
+}
+@media (max-width: 450px) {
+   .home_container main::after {
+  background-position:bottom ;
+background-size: cover;
+}
+}
