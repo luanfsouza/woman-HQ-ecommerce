@@ -5,7 +5,7 @@ import Banner from '../src/components/Banner'
 import HomePage from '../src/components/Home'
 import Ilustrators from '../src/components/ilustrators/Illustrators'
 import styles from '../styles/Home.module.css'
-
+import Windowd from '../src/components/about/Windowd'
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -19,6 +19,7 @@ export default function Home() {
        <HomePage/>
        <About/>
        <Ilustrators/>
+       
       </main>
     </div>
   )

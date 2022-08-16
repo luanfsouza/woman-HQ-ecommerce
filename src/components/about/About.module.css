@@ -1,10 +1,11 @@
 .about_container {
   width: 100%;
-  height: 50vh;
+  height: 110vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: #f3f4ff;
-  grid-auto-rows: 50vh;
+  grid-auto-rows: 45vh 45vh 10vh;
+  position: relative;
 }
 
 .about_info,
@@ -17,6 +18,56 @@
   padding: 2rem 4rem;
   background-color: #f3f4ff;
 }
+.nada {
+  width: 0px;
+  height: 0px;
+  transition: 1s;
+  transform: scale(0.8);
+  visibility: hidden;
+  overflow: hidden;
+  display: none;
+}
+.nada img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+.active {
+  /* width: 200px;
+  height: 200px; */
+  transition: 1s;
+  visibility: visible;
+  /* transform: scale(1.2); */
+  margin-left: 3rem;
+  background-color: white;
+    box-shadow: 0px 0px 14px 2px rgba(155, 154, 154, 0.471);
+    height: 120%;
+    width: 16vw;
+}
+.active h1{
+   color: #763ce2;
+   font-size: min(1.2rem, 10vw);
+}
+.active p{
+   font-size: min(1rem, 10vw);
+   margin: 10px 0;
+}
+
+
+.active:first-child {
+  width: -100%;
+}
+
+.active:last-child {
+  width: -100%;
+}
+.active img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
 .about_info h1 {
   color: #965dff;
   font-size: min(2em, 10vw);
@@ -32,50 +83,160 @@
   color: #965dff;
   padding: 1rem;
   background: white;
-  box-shadow: 0px 0px 14px 2px rgba(57, 55, 55, 0.299);
+  box-shadow: 0px 0px 14px 2px rgba(155, 154, 154, 0.299);
   cursor: pointer;
 }
 .about_img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+.about_img {
 }
 
-.illustrators_info h1{
-      color: #965dff;
+.illustrators_info h1 {
+  color: #965dff;
   font-size: min(2em, 10vw);
   font-family: "Playfair Display", serif;
 }
-.illustrators_info span{
+.illustrators_info span {
   font-size: min(0.8em, 8vw);
   align-self: flex-start;
   color: #c55ee4;
 }
 .illustrators_banner {
-  background-color: #1332c9;
-  background-image: linear-gradient(43deg, #1332c9 0%, #bc05fe 100%);
+  background-color: #0c2495;
+  background-image: linear-gradient(43deg, #0c2495 0%, #b725ec 78%);
+
   position: relative;
 }
-.illustrators_banner::after{
+.illustrators_banner::after {
   content: "";
   opacity: 0.5;
   top: 0;
   display: block;
   height: 100%;
-  
+
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: 0;  
-background-image: url('../../../public/images/capitan-marvel.png');
-opacity: 0.2;
-background-repeat: no-repeat;
-background-size: contain;
-background-position: center top 10%;
+  z-index: 0;
+  background-image: url("../../../public/images/capitan-marvel.png");
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top 10%;
+}
+.illustrator_box {
+  /* display: flex;
+  position: absolute;
+  bottom: -0.3%;
+  right: 20%; */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* margin: 0 15vw; */
+  position: relative;
+}
+.illustrator_perfil {
+  /* width: 100%;
+height: 100%; */
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
 
+  margin: 0 15vw;
+  transform: translateY(-20%);
+  justify-content: center;
+}
+.perfil_btn {
+  position: absolute;
+  top: -30%;
+  right: 5%;
+  z-index: 3;
+}
+.perfil_btn button {
+  background-color: white;
+  color: rgb(255, 0, 234);
+  border: none;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+.illustrator_img {
+  width: 100%;
+  height: 50%;
+}
+.illustrator_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slideText{
+  padding: 0 10px;
+  text-align: start;
+  
+}
+.slideText span{
+ color: #b725ec;
+ cursor: pointer;
 }
 @media (max-width: 1100px) {
   .about_container {
     grid-template-columns: 1fr;
+    grid-auto-rows: 60vh 40vh 50vh 40vh 20vh;
   }
+  .about_info {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .illustrator_perfil {
+  }
+  .illustrator_box {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .illustrator_perfil {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  .active {
+    height: 200px;
+    text-align: center;
+    width: 30vw;
+    margin: 0 5px;
+  }
+  .active h1 {
+    font-size: .8rem;
+  }
+  .active p {
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    font-size: 0.6rem;
+  }
+  .active:nth-child(3) {
+    display: none;
+  }
+  .about_info,
+  .illustrators_info {
+    gap: 1rem;
+    padding: 0rem 2rem;
+  }
+  .perfil_btn {
+  position: absolute;
+  top: -70%;
+  right: 5%;
+  z-index: 3;
+}
+}
+@media (max-width: 500px) {
+
+  .active {
+    height: 200px;
+    text-align: center;
+    width: 40vw;
+    margin: 0 5px;
+  }
+
 }
