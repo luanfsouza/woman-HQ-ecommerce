@@ -17,15 +17,7 @@ export default function About() {
   const [count2, setCount2] = useState(count + 1);
   const [count3, setCount3] = useState(count + 2);
 
-  const Component = () => {
-    const { height, width } = useWindowDimensions();
 
-    return (
-      <div>
-        width: {width} ~ height: {height}
-      </div>
-    );
-  };
   function carro() {
     return image.map((item, i) => (
       <div

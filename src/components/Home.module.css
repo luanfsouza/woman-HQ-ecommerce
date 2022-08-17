@@ -14,6 +14,7 @@ background-image: linear-gradient(43deg, #0c2495 0%, #c739fa 78%);
   display: flex;
   background-color: #f3f4ff;
   width: 100%;
+  
 }
 
 .navbar {
@@ -22,6 +23,7 @@ background-image: linear-gradient(43deg, #0c2495 0%, #c739fa 78%);
   flex: 2.5;
   justify-content: space-around;
   height: 70px;
+ 
 }
 .navbar .btn_mobile {
   display: none;
@@ -70,6 +72,7 @@ background-image: linear-gradient(43deg, #0c2495 0%, #c739fa 78%);
   display: flex;
   align-items: center;
   justify-content: space-around;
+   z-index: 5;
 }
 .nav_user ul {
   width: 100%;
@@ -103,7 +106,7 @@ background-image: linear-gradient(43deg, #0c2495 0%, #c739fa 78%);
   position: absolute;
   z-index: 0;  
 background-image: url('../../public/images/mulher-maravilha.png');
-opacity: 0.15;
+opacity: 0.1;
 background-repeat: no-repeat;
 background-size: auto;
 background-position: left top 20%;
