@@ -5,7 +5,7 @@ import HomePage from '../src/components/Home'
 import Products from './products'
 import Testimonials from './testimonials'
 import Footer from './contact'
-import About from '../src/components/about/about'
+import About from './about'
 export default function Home() {
   return (
     <div>
