@@ -32,7 +32,7 @@ export default function Footer() {
               <a
                 href="https://github.com/luanfsouza"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noreferrer"
               >
                 <FaGithub />
               </a>
@@ -41,9 +41,9 @@ export default function Footer() {
               <a
                 href="https://www.linkedin.com/in/luan-ferreira-6b4a25181/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noreferrer"
               >
-                <FaLinkedinIn  />
+                <FaLinkedinIn />
               </a>
             </div>
             <div>
