@@ -16,12 +16,12 @@ export default function HomePage() {
       <header className={`${styles.home_nav} }`}>
         <nav>
           <div className={`${styles.navbar} ${styles[active]}`}>
-            <div className={styles.nav_logo}>
+            <div className={styles.nav_logo} >
               <img src="images/spiral-logo2.png" alt="My Awesome Image" />
             </div>
 
             <ul>
-              <a href="/">
+              <a href="">
                 <li>Home</li>
               </a>
               <a href="#about">
