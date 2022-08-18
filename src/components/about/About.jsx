@@ -29,7 +29,7 @@ export default function About() {
             : styles.nada
         }
       >
-        <img src={item.url} />
+        <img src={item.url} alt="My Awesome Image" />
         <div className={styles.slideText}>
           <h1>{item.name}</h1>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
@@ -67,7 +67,7 @@ export default function About() {
   return (
     <section className={styles.about_container}>
       <div className={styles.about_img}>
-        <img src="images/group.jpg" />
+        <img src="images/group.jpg" alt="My Awesome Image" />
       </div>
       <div className={styles.about_info}>
         <span id="about">ABOUT US</span>

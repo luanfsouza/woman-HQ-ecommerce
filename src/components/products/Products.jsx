@@ -45,7 +45,7 @@ export default function Products() {
       >
         <div className={styles.slideImg}>
           <div className={styles.shadow}>
-            <img src={item.url} />
+            <img src={item.url} alt="My Awesome Image" />
             <div className={styles.shadow1}></div>
             <div className={styles.shadow2}></div>
           </div>
@@ -56,7 +56,9 @@ export default function Products() {
           <h1>{item.name}</h1>
           <p>Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur. </p>
           <span className={styles.price}>$35.50</span>
-          <button><MdOutlineShoppingCart/> ADD TO CART</button>
+          <button>
+            <MdOutlineShoppingCart /> ADD TO CART
+          </button>
         </div>
       </div>
     ));

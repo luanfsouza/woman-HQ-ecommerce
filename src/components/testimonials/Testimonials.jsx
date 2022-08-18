@@ -44,7 +44,7 @@ const [count3, setCount3] = useState(count + 2);
         </div>
         <div className={styles.perfil}>
           <div className={styles.perfil_img}>
-            <img src={item.url} />
+            <img src={item.url} alt="My Awesome Image" />
           </div>
           <div className={styles.perfil_info}>
             <h2>{item.name}</h2>
