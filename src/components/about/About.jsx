@@ -70,7 +70,7 @@ export default function About() {
         <img src="images/group.jpg" />
       </div>
       <div className={styles.about_info}>
-        <span>ABOUT US</span>
+        <span id="about">ABOUT US</span>
         <h1>Wonder Woman.</h1>
         <p>
           lorem lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit.

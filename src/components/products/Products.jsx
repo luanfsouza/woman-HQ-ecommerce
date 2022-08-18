@@ -5,6 +5,16 @@ import {
   MdKeyboardArrowRight,
   MdOutlineShoppingCart,
 } from "react-icons/md";
+
+import ImageSlider from "../ImageSlider";
+
+const image1 = "images/hq1.jpg";
+const image2 = "images/hq2.jpg";
+const image3 = "images/hq3.jpg";
+const image4 = "images/hq4.jpg";
+const image5 = "images/hq5.jpg";
+const image6 = "images/hq6.jpg";
+
 export default function Products() {
   const arrayImage = [
     { url: "images/hq1.jpg", name: "Wonder Woman" },
@@ -94,9 +104,14 @@ export default function Products() {
         </ul>
         <div className={styles.products_items}>{generatorItems()}</div>
         <div className={styles.products_btn}>
-            <button onClick={right}><MdKeyboardArrowLeft/></button>
-            <button onClick={left}><MdKeyboardArrowRight/></button>
+          <button onClick={right}>
+            <MdKeyboardArrowLeft />
+          </button>
+          <button onClick={left}>
+            <MdKeyboardArrowRight />
+          </button>
         </div>
+       
       </main>
     </div>
   );

@@ -5,8 +5,9 @@ import Banner from '../src/components/Banner'
 import HomePage from '../src/components/Home'
 import Ilustrators from '../src/components/ilustrators/Illustrators'
 import styles from '../styles/Home.module.css'
-import Windowd from '../src/components/about/Windowd'
 import Products from '../src/components/products/Products'
+import Testimonials from '../src/components/testimonials/Testimonials'
+import Footer from '../src/components/footer/Footer'
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -21,6 +22,8 @@ export default function Home() {
        <About/>
        <Ilustrators/>
        <Products/>
+       <Testimonials/>
+       <Footer/>
       </main>
     </div>
   )

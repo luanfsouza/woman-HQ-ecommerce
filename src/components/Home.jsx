@@ -38,7 +38,7 @@ export default function HomePage() {
                 <FaSearch />
               </li>
               <li className={styles.singin}>SING IN</li>
-              <button className={styles.btn_mobile} onClick={toggleMenu} >
+              <button className={styles.btn_mobile} onClick={toggleMenu}>
                 <span className={styles.hamburger}></span>
               </button>
             </ul>
@@ -64,10 +64,23 @@ export default function HomePage() {
           <Banner />
         </div>
         <div className={styles.main_logos}>
-          <FaFacebookSquare />
-          <FaGithub />
+          <div>
+            <FaFacebookSquare />
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/luan-ferreira-6b4a25181/"
+              target="_blank"
+            >
+              <FaLinkedinIn />
+            </a>
+          </div>
+
+          <a href="https://github.com/luanfsouza" target="_blank">
+            <FaGithub />
+          </a>
+
           <FaInstagram />
-          <FaLinkedinIn />
         </div>
       </main>
     </div>
