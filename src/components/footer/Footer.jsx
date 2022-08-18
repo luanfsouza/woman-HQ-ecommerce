@@ -29,7 +29,11 @@ export default function Footer() {
           </p>
           <div className={styles.social}>
             <div>
-              <a href="https://github.com/luanfsouza" target="_blank">
+              <a
+                href="https://github.com/luanfsouza"
+                target="_blank"
+                rel="noopener"
+              >
                 <FaGithub />
               </a>
             </div>
@@ -37,6 +41,7 @@ export default function Footer() {
               <a
                 href="https://www.linkedin.com/in/luan-ferreira-6b4a25181/"
                 target="_blank"
+                rel="noopener"
               >
                 <FaLinkedinIn />
               </a>
