@@ -6,7 +6,6 @@ import {
   MdOutlineShoppingCart,
 } from "react-icons/md";
 
-import ImageSlider from "../ImageSlider";
 
 const image1 = "images/hq1.jpg";
 const image2 = "images/hq2.jpg";
