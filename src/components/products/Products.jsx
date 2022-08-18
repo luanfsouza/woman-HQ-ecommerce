@@ -30,7 +30,6 @@ export default function Products() {
   const [count, setCount] = useState(0);
   const [count2, setCount2] = useState(count + 1);
   const [count3, setCount3] = useState(count + 2);
-  console.log(count, count2, count3);
   function generatorItems() {
     return image.map((item, i) => (
       <div
