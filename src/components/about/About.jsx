@@ -6,9 +6,9 @@ import { useState } from "react";
 
 export default function About() {
   const arrayImage = [
-    { url: "images/woman1.jpg", name: "Maria Fernanda" },
+    { url: "images/woman11.jpg", name: "Maria Fernanda" },
     { url: "images/woman2.jpg", name: "Gabriela Alencar" },
-    { url: "images/woman3.jpg", name: "Victoria Souza" },
+    { url: "images/woman31.jpg", name: "Victoria Souza" },
     { url: "images/woman4.jpg", name: "Alexa Shipt" },
     { url: "images/woman5.jpg", name: "Beatriz Nevez" },
   ];
@@ -67,7 +67,7 @@ export default function About() {
   return (
     <section className={styles.about_container}>
       <div className={styles.about_img}>
-        <img src="images/group.jpg" alt="My Awesome Image" />
+        <img src="images/group1.jpg" alt="My Awesome Image" />
       </div>
       <div className={styles.about_info}>
         <span id="about">ABOUT US</span>
