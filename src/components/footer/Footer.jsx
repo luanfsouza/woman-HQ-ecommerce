@@ -43,7 +43,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedinIn />
+                <FaLinkedinIn  />
               </a>
             </div>
             <div>
@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
         <div className={styles.right}>
           <ul>
-            <h1>NAVIGATION</h1>
+            <h1>NAVIGATION </h1>
             <li>Home</li>
             <li>About us</li>
             <li>Illustrators</li>
