@@ -2,8 +2,8 @@
   margin-top: 13vh;
   height: 100vh;
   width: 100%;
-  background-color: #0c2495;
-  background-image: linear-gradient(43deg, #0c2495 0%, #c739fa 78%);
+background-color: #0b219e;
+background-image: linear-gradient(43deg, #0b219e 0%, #e222e2 60%);
   position: relative;
   opacity: 1;
   display: flex;
@@ -23,8 +23,8 @@
   right: 0;
   position: absolute;
   z-index: 0;
-  background-image: url("../../../public/images/supergirl1.png");
-  opacity: 0.1;
+  background-image: url("../public/images/supergirl1.png");
+  opacity: 0.2;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center left;
@@ -39,7 +39,7 @@
   z-index: 1;
 }
 .products_box .box1 {
-  background-color: #c55ee4;
+  background-color: #ff3ade;
   top: 0;
 }
 .products_box .box2 {
@@ -265,6 +265,9 @@ background-image: linear-gradient(90deg, #ffffff2b 0%, #00000073 100%);
   }
   .active {
   width: 22vw;
+}
+.products_container::after {
+  background-position: top 3% left;
 }
 }
 @media (max-width: 500px) {

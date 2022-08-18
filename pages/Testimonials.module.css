@@ -206,7 +206,7 @@ max-width: 200px;
     padding: 20px;
 }
 .sectionTwo .box3 {
-  background-color: #c55ee4;
+  background-color: #f53fd6;
    display: flex;
     padding: 20px;
 }
@@ -216,7 +216,6 @@ max-width: 200px;
     grid-template-columns: 1fr 1fr;
   }
   .sectionTwo .box3 {
-    background-color: #c55ee4;
     grid-column-start: 1;
     grid-column-end: 3;
   }

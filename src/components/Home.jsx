@@ -21,12 +21,24 @@ export default function HomePage() {
             </div>
 
             <ul>
-              <li>Home</li>
-              <li>About us</li>
-              <li>Ilustrators</li>
-              <li>Store</li>
-              <li>Gallery</li>
-              <li>Contact us</li>
+              <a href="/">
+                <li>Home</li>
+              </a>
+              <a href="#about">
+                <li>About us</li>
+              </a>
+              <a href="#illustrators">
+                <li>Ilustrators</li>
+              </a>
+              <a href="#products">
+                <li>Store</li>
+              </a>
+              <a href="#testimonials">
+                <li>Testimonials</li>
+              </a>
+              <a href="#contact">
+                <li>Contact us</li>
+              </a>
             </ul>
           </div>
           <div className={`${styles.nav_user}  ${styles[active]}`}>

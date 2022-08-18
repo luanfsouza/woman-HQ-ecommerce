@@ -94,7 +94,7 @@ export default function Products() {
         <div className={styles.box2}></div>
       </div>
       <main>
-        <h1 className={styles.products_title}>Our Products</h1>
+        <h1 className={styles.products_title} id='products'>Our Products</h1>
         <ul>
           <li>MARVEL</li>
           <li>DC COMICS</li>

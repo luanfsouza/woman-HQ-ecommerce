@@ -84,7 +84,7 @@ const [count3, setCount3] = useState(count + 2);
     <main className={styles.testimonials_container}>
       <section className={styles.sectionOne}>
         <div className={styles.testimonials_title}>
-          <h1>Testimonials</h1>
+          <h1 id="testimonials">Testimonials</h1>
           <button>VIEW ALL</button>
         </div>
         <div className={styles.testimonials_commments}>

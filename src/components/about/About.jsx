@@ -82,7 +82,7 @@ export default function About() {
       </div>
 
       <div className={styles.illustrators_info}>
-        <span>OUR</span>
+        <span id="illustrators">OUR</span>
         <h1>Illustrators</h1>
         <p>
           lorem lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit.

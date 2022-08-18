@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <div className={styles.footer_container}>
       <div className={styles.footer_newsletter}>
-        <h1>Newsletter</h1>
+        <h1 id="contact">Newsletter</h1>
         <div className={styles.email}>
           <input type="email" placeholder="Your email" />
           <button>Submit</button>
