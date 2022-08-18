@@ -88,9 +88,12 @@ line-height: 30px;
     cursor: pointer;
     transition: 0.4s;
 }
-.footer_info .left .social div svg{
+/* .footer_info .left .social div svg{
    color: #c739fa;
 }
+.footer_info .left .social div svg:hover{
+   color: white;
+} */
 .footer_info .left .social div:hover{
    background-color: #c739fa;
    color: white;

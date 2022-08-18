@@ -76,6 +76,7 @@ margin-left: 1rem;
   cursor: pointer;
   height: 30px;
   margin-top: 10%;
+  margin-left: 20px;
 }
 .testimonials_commments .slideText {
   background-color: white;
@@ -152,6 +153,18 @@ margin-left: 1rem;
   background-color: white;
   border: 1px solid #965dff;
   padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.sectionOne .testimonials_title button:hover {
+  color: white;
+  background-color: #965dff;
+  border: 1px solid #965dff;
+  padding: 0.5rem 1rem;
+  
+}
+.sectionOne .testimonials_title button:active{
+  transform: scale(0.98);
+  
 }
 
 .testimonials_container .sectionTwo {
@@ -253,5 +266,9 @@ max-width: 100px;
 }
 .testimonials_container .sectionTwo p {
 margin: 20px 0;
+}
+.testimonials_commments button{
+   
+  margin-left: 0px;
 }
 }
