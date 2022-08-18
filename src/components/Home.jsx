@@ -17,7 +17,7 @@ export default function HomePage() {
         <nav>
           <div className={`${styles.navbar} ${styles[active]}`}>
             <div className={styles.nav_logo}>
-              <img src="images/spiral-logo2.png" />
+              <img src="images/spiral-logo2.png" alt="My Awesome Image" />
             </div>
 
             <ul>

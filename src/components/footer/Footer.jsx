@@ -72,10 +72,10 @@ export default function Footer() {
           </ul>
           <ul>
             <h1>TOP CATEGORIES</h1>
-            <li>1980's</li>
+            <li>1980s</li>
             <li>Marvel</li>
             <li>Manga</li>
-            <li>2000's</li>
+            <li>2000s</li>
           </ul>
         </div>
         <div className={styles.bottom}>
